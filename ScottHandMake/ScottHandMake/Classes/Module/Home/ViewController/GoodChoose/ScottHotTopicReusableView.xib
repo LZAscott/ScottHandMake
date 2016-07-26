@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9532" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ScottHotTopicReusableView" id="U6b-Vx-4bR" customClass="ScottHotTopicReusableView">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="热门专题" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBg-J3-WVg">
+                    <rect key="frame" x="130" y="14" width="59" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="59" id="bOr-wa-P0L"/>
+                        <constraint firstAttribute="height" constant="21" id="gHl-M7-c6F"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5NA-Sp-ANw" userLabel="left">
+                    <rect key="frame" x="0.0" y="24" width="130" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="4lZ-xi-R4n"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OF8-bk-Kpb" userLabel="right">
+                    <rect key="frame" x="189" y="25.5" width="131" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="Pq6-DM-H6K"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="OF8-bk-Kpb" firstAttribute="leading" secondItem="UBg-J3-WVg" secondAttribute="trailing" id="ApL-0d-8lW"/>
+                <constraint firstAttribute="trailing" secondItem="OF8-bk-Kpb" secondAttribute="trailing" id="GFF-90-EaU"/>
+                <constraint firstItem="UBg-J3-WVg" firstAttribute="leading" secondItem="5NA-Sp-ANw" secondAttribute="trailing" id="PzZ-9e-uzT"/>
+                <constraint firstItem="UBg-J3-WVg" firstAttribute="centerX" secondItem="U6b-Vx-4bR" secondAttribute="centerX" id="dYG-3f-d7H"/>
+                <constraint firstItem="UBg-J3-WVg" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="oYh-AM-399"/>
+                <constraint firstItem="5NA-Sp-ANw" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="tZB-RR-1Ph"/>
+                <constraint firstItem="OF8-bk-Kpb" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="u5Y-T2-krT"/>
+                <constraint firstItem="5NA-Sp-ANw" firstAttribute="centerY" secondItem="U6b-Vx-4bR" secondAttribute="centerY" id="x6s-rH-r8z"/>
+            </constraints>
+        </collectionReusableView>
+    </objects>
+</document>
