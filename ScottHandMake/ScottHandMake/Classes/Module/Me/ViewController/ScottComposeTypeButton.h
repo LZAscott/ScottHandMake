@@ -2,7 +2,7 @@
 //  ScottComposeTypeButton.h
 //  ScottHandMake
 //
-//  Created by bopeng on 16/7/25.
+//  Created by Scott on 16/7/25.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 

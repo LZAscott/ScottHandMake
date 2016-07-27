@@ -2,7 +2,7 @@
 //  UIBarButtonItem+ScottExtension.m
 //  ScottHandMake
 //
-//  Created by bopeng on 16/7/26.
+//  Created by Scott on 16/7/26.
 //  Copyright © 2016年 Scott. All rights reserved.
 //
 
