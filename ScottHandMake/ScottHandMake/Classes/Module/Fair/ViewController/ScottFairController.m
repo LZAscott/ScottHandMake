@@ -25,6 +25,8 @@
     [super viewDidLoad];
 
     self.navigationItem.titleView = self.segmentCtrl;
+    
+    self.tabBarItem.badgeValue = @"new";
 }
 
 #pragma mark - 

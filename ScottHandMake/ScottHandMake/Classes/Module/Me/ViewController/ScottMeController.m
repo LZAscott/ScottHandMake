@@ -9,6 +9,8 @@
 #import "ScottMeController.h"
 #import "ScottComposeTypeView.h"
 #import "ScottComposeType.h"
+#import "UIView+ScottRuntime.h"
+#import <objc/runtime.h>
 
 @interface ScottMeController ()
 
@@ -24,10 +26,14 @@
     btn.center = self.view.center;
     [btn addTarget:self action:@selector(btnClick) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:btn];
+    
+    self.tabBarItem.badgeValue = @"new";
+    UIView *resultView = [UIView scott_firstInView:self.tabBarController.tabBar clazzName:@"_UIBadgeBackground"];
+    [resultView scott_ivarsList];
+    [resultView setValue:[UIImage imageNamed:@"main_badge"] forKey:@"_image"];
 }
 
 - (void)btnClick {
-    
     ScottComposeTypeView *composeTypeView = [[ScottComposeTypeView alloc] initWithSelectComposeType:^(ScottComposeType *type) {
         NSLog(@"%@--%@--%@",type.title, type.icon, type.actionName);
         if (type.controllerName != nil) {
